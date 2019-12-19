@@ -18,6 +18,7 @@ install: build
 	@echo Installing to $(OCTANT_PLUGINSTUB_DIR)/$(PLUGIN_NAME)
 	@mkdir -p $(OCTANT_PLUGINSTUB_DIR)
 	@cp $(BUILD_DIR)/$(PLUGIN_NAME) $(OCTANT_PLUGINSTUB_DIR)/$(PLUGIN_NAME)
+	chmod a+x $(OCTANT_PLUGINSTUB_DIR)/$(PLUGIN_NAME)
 
 dep:
 	@dep ensure -v -vendor-only
