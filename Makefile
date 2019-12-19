@@ -1,4 +1,4 @@
-PLUGIN_NAME=iofog
+PLUGIN_NAME=octant-iofog
 BUILD_DIR ?= bin
 PACKAGE_DIR = cmd
 
